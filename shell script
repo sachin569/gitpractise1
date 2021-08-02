@@ -1,0 +1,76 @@
+echo "SHELL"
+chsh -s /bin/sh
+
+
+$echo $HOSTNAME
+echo "BASH_VERSION"
+unset
+
+#!/bin/bash
+read -p 'Username:'username
+read -sp'Password:'password
+echo "current logged in user is : $username
+
+
+#!/usr/bin/env bash
+
+echo -n 'Enter the First Number:'
+read -r a
+echo -n 'Enter Second numer:'
+read -r b
+echo "$a + $b = $((a+b))"
+echo "$a + $b = $((a-b))"
+echo "$a * $b = $((a*b))"
+echo "$a / $b = $((a/b))"
+
+FILE=/etc/resolv.conf
+if [ -f "FILE" ] ;then
+    echo "$FILE exists."
+else
+    echo "FILE does not exists.
+fi
+
+
+echo :enter two numbers"
+read a,b:
+
+echo "a=$a":
+echo "b=$b":
+
+if["$a" -eq "$b"];
+then
+    echo "numbers are equal"
+else
+    echo "numers are not equal"
+fi;
+
+
+#!/bin/bash
+filename="file1.txt"
+echo start
+while read p:do
+      echo $p
+done
+
+
+echo "enter n values as range to calculate even numbers"
+read n
+i=1
+while {$i -1e $n]
+do
+if ['exp $i %2' -eq 0 ]
+then 
+echo even = $i
+
+done
+
+
+if getent passwd $1>dev/null 2>&1;then
+    echo "yes the user exists"
+else 
+    echo "no,the user does not exist"
+fi    
+     
+
+for n in {1..5}; do echo "five times only ";done
+
